@@ -1,14 +1,11 @@
 import 'dart:ffi';
 
 void main() {
-  var isActive = true;
-
-  while (isActive) {
-    print("Active");
-    isActive = false;
-  }
+  bool isActive = false;
+  num num1 = 0;
+  num num2 = 1;
   
-  do {
-    print("Hello");
-  } while (isActive);
+  if (num1 != num2) {
+    print(true);
+  }
 }

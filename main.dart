@@ -3,16 +3,16 @@ import 'dart:ffi';
 void main() {
   var list = [1, 2, 44, 58, 2, 268, 54, 895];
 
-  /// nested for
-  // for (int i = 0; i < list.length; i++) {
-  //   for (int j = 0; j < list.length; j++) {
-  //     print(j);
-  //     print(i);
-  //   }
-  // }
+  // / nested for
+  for (int i = 0; i < list.length; i++) {
+    for (int j = 0; j < list.length; j++) {
+      print(j);
+      print(i);
+    }
+  }
 
 
-  
+
 }
 
 

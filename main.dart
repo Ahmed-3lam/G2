@@ -1,37 +1,54 @@
+import 'dart:io';
+
 import 'const.dart';
 import 'screens/home_screen.dart';
 
 void main() {
-  var name = getName() ?? "Mohamed";
-  var price = getPrice();
-  print(name);
-  print(price);
+  printMyName("Ahmed", 15, "Bmw");
+  printMyNameWithNamedParams(name: "Ahmed", age: 15, car: "Bmw");
+  printMyNameWithNamedAndUnNamed(
+    "Ahmed",
+    "Car",
+    age: 15,
+  );
 }
 
 /// Functions
 
 // [type]  [functionName]  (){},
-
-void printAll() {
-  var name = "AAAA";
-  print("Osama");
-  print("Ahmed");
-  print("MOhamed");
-  print("ff");
-  print("gg");
-  print("gh");
-  print("gh");
+void printMyName(String name, int age, String car) {
+  print("My Name is $name");
+  print("My Age is $age");
+  print("My Car is $car");
 }
 
-String? getName() {
-  var name = "hhh";
-  return null;
+void printMyNameWithNamedParams({
+  required String name,
+  required int age,
+  required String car,
+}) {
+  print("My Name is $name");
+  print("My Age is $age");
+  print("My Car is $car");
 }
 
-int getPrice() {
-  return 10;
+void printMyNameWithNamedAndUnNamed(
+  String name,
+  String car, {
+  required int age,
+}) {
+  print("My Name is $name");
+  print("My Age is $age");
+  print("My Car is $car");
 }
 
-getMyList() {
-  return [1, 2, 4, 5, 5];
-}
+
+
+
+
+/// void
+/// Return types (4 functions)
+/// unNamed Params
+/// Named Params ( void , return)
+/// Named & UnNamed Params( void , return)
+/// 

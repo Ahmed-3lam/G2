@@ -1,23 +1,28 @@
 void main() {
-  bool isActive = true;
-  int count = 0;
-  while (count < 5) {
-    count++;
-    print("Dont stop");
+  if (1 != 1) {
+    print("Correct");
+  } else if (1 == 2) {
+    print("ss");
+  } else {
+    print("Wrong");
   }
 
-  do {
-    count++;
-    print("Dont stop");
-  } while (count < 5);
+  1 != 1 ? print("correct") :1 == 2? print("wrong"):print("C");
 
-  for (int i = 0; i < 10; i++) {
-    print(i);
+  if (1 == 1) {
+    print("yes");
   }
 
-  List<int> list = [1, 2, 5, 4, 8, 6, 9];
+  var command = "OPENn";
 
-  for (var item in list) {
-    print(item);
+  switch (command) {
+    case "OPEN":
+      print("OPEN");
+
+    case "Close":
+      print("CLOSE");
+
+    default:
+      print("Default");
   }
 }

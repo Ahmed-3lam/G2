@@ -1,28 +1,37 @@
+import 'const.dart';
+import 'screens/home_screen.dart';
+
 void main() {
-  if (1 != 1) {
-    print("Correct");
-  } else if (1 == 2) {
-    print("ss");
-  } else {
-    print("Wrong");
-  }
+  var name = getName() ?? "Mohamed";
+  var price = getPrice();
+  print(name);
+  print(price);
+}
 
-  1 != 1 ? print("correct") :1 == 2? print("wrong"):print("C");
+/// Functions
 
-  if (1 == 1) {
-    print("yes");
-  }
+// [type]  [functionName]  (){},
 
-  var command = "OPENn";
+void printAll() {
+  var name = "AAAA";
+  print("Osama");
+  print("Ahmed");
+  print("MOhamed");
+  print("ff");
+  print("gg");
+  print("gh");
+  print("gh");
+}
 
-  switch (command) {
-    case "OPEN":
-      print("OPEN");
+String? getName() {
+  var name = "hhh";
+  return null;
+}
 
-    case "Close":
-      print("CLOSE");
+int getPrice() {
+  return 10;
+}
 
-    default:
-      print("Default");
-  }
+getMyList() {
+  return [1, 2, 4, 5, 5];
 }

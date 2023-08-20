@@ -1,40 +1,19 @@
 void main() {
-  // getMyName2("Mohamed", 15);
-  // getMyName3(
-  //   name: "Ahmed",
-  // );
-  // getMyName4("ahmed", age: 15);
+  Animal lion = Animal(name: "Lion", id: "1", type: "T10");
+  String name = "jjj";
+  print(lion.name);
 }
 
-/// Functions (degree: ,light:true,)
-/// (1) void
-// void printMyName() {
-//   print("Ahmed");
-// }
+class Animal {
+  /// Variables
+  String name;
+  String id;
+  String type;
 
-///(2) return >>> type of function
-// String getMyName() {
-//   return "Ahmed";
-// }
-
-// int getMyAge() {
-//   return 15;
-// }
-
-/// (2) params: (i) unNamed params  functions
-// void getMyName2(String name, int age) {
-//   print(name);
-//   print(age);
-// }
-
-/// (ii) Named params functions
-// void getMyName3({required String name, int? age}) {
-//   print(name);
-//   print(age);
-// }
-
-///  named & unNamed functions
-// void getMyName4(String name, {int? age}) {
-//   print(name);
-//   print(age);
-// }
+  /// Cunstructor (construct objects)
+  Animal({
+    required this.name,
+    required this.id,
+    required this.type,
+  });
+}

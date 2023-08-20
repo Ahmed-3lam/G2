@@ -1,25 +1,40 @@
-import 'dart:io';
-
 void main() {
-  namedParams(street: "2514");
-  namedParams(name: "Mohamed", street: "2514");
-  namedParams(car: "Fiat", street: "2514");
+  // getMyName2("Mohamed", 15);
+  // getMyName3(
+  //   name: "Ahmed",
+  // );
+  // getMyName4("ahmed", age: 15);
 }
 
-///Optional Params
-void namedParams({
-  String? name,
-  String? car,
-  String? address,
-  required String street,
-}) {
-  if (name != null) print(name);
-  if (car != null) print(car);
-  if (address != null) print(address);
-  print(street);
-}
+/// Functions (degree: ,light:true,)
+/// (1) void
+// void printMyName() {
+//   print("Ahmed");
+// }
 
+///(2) return >>> type of function
+// String getMyName() {
+//   return "Ahmed";
+// }
 
+// int getMyAge() {
+//   return 15;
+// }
 
-/// Don't Repeat yourself
+/// (2) params: (i) unNamed params  functions
+// void getMyName2(String name, int age) {
+//   print(name);
+//   print(age);
+// }
 
+/// (ii) Named params functions
+// void getMyName3({required String name, int? age}) {
+//   print(name);
+//   print(age);
+// }
+
+///  named & unNamed functions
+// void getMyName4(String name, {int? age}) {
+//   print(name);
+//   print(age);
+// }

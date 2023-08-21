@@ -1,17 +1,8 @@
-import 'animal.dart';
-import 'colors.dart';
-import 'jsons.dart';
+import 'extension.dart';
 
 void main() {
-  Lion lion1 = Lion();
- 
-  lion1.move();
+  String name = "wwww.google.com/searchflower";
+  String name2 = "wwww.google.com/search?flower";
+
+  print("3lam.ahmed@gmail".isValidEmail);
 }
-
-
-
-/// Encapsulation
-/// Inheritance (الوراثة)
-
-
-/// Head First object oriented Analysis & Design

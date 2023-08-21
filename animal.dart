@@ -18,19 +18,20 @@ interface class States{
 }
 
 class Lion implements States{
+
   @override
   void error() {
-    // TODO: implement error
+  
   }
 
   @override
   void loading() {
-    // TODO: implement loading
+
   }
 
   @override
   void success() {
-    // TODO: implement success
+    
   }
 
 }

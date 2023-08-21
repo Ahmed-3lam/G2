@@ -1,9 +1,12 @@
 abstract class Animal {
-  String? id;
-  String? name;
-  void move() {
-    print("move");
+  String? _id;
+  String? _name;
   
+
+  void setName(String name) {
+    if (name.isNotEmpty) {
+      this._name = name;
+    }
   }
 
   void eat() {
@@ -11,29 +14,21 @@ abstract class Animal {
   }
 }
 
-interface class States{
-  void loading(){}
-  void success(){}
-  void error(){}
+interface class States {
+  void loading() {}
+  void success() {}
+  void error() {}
 }
 
-class Lion implements States{
+class Lion implements States {
+  @override
+  void error() {}
 
   @override
-  void error() {
-  
-  }
+  void loading() {}
 
   @override
-  void loading() {
-
-  }
-
-  @override
-  void success() {
-    
-  }
-
+  void success() {}
 }
 
 

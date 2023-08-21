@@ -3,9 +3,9 @@ import 'colors.dart';
 import 'jsons.dart';
 
 void main() {
-  Animal.getInstance().postData();
-  Animal.getInstance().name;
-
+  Lion lion1 = Lion();
+ 
+  lion1.move();
 }
 
 

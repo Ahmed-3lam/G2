@@ -1,19 +1,35 @@
-class Animal {
-  int? _id;
-   String? name;
-  String? _type;
-  static int _count = 0;
-  static Animal _instance = Animal._();
-  Animal._();
+abstract class Animal {
+  String? id;
+  String? name;
 
-  static Animal getInstance() {
-    return _instance;
+  void move() {
+    print("move");
+  
   }
 
-   void postData() {
-    print("Data");
+  void eat() {
+    print(eat);
   }
 }
+
+class Lion extends Animal {
+  @override
+  String? get id => super.id;
+  
+  @override
+  void move() {
+    print("Very Fast");
+    super.move();
+  }
+
+  @override
+  void eat() {
+    super.eat();
+  }
+}
+
+
+
 
 
 

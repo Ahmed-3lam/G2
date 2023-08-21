@@ -1,7 +1,6 @@
 abstract class Animal {
   String? id;
   String? name;
-
   void move() {
     print("move");
   
@@ -12,20 +11,28 @@ abstract class Animal {
   }
 }
 
-class Lion extends Animal {
+interface class States{
+  void loading(){}
+  void success(){}
+  void error(){}
+}
+
+class Lion implements States{
   @override
-  String? get id => super.id;
-  
-  @override
-  void move() {
-    print("Very Fast");
-    super.move();
+  void error() {
+    // TODO: implement error
   }
 
   @override
-  void eat() {
-    super.eat();
+  void loading() {
+    // TODO: implement loading
   }
+
+  @override
+  void success() {
+    // TODO: implement success
+  }
+
 }
 
 

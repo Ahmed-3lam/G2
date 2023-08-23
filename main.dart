@@ -11,7 +11,9 @@ void main() {
 enm env{
 
 }
+enum student{
 
+}
 
 enum EMPLOYEE {
   MANAGER,
